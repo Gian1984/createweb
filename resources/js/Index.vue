@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-    <div class="min-h-screen">
+    <div class="min-h-screen mt-0">
         <Disclosure as="nav" class="bg-gray-800 shadow-sm" v-slot="{ open }">
             <div class="mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
@@ -30,14 +30,14 @@
                                     </button>
                                     <img class="mx-auto h-12 w-auto" src="/img/create.png" alt="Workflow" />
                                     <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-                                        Sign in to your account
+                                        Accedi al tuo account
                                     </h2>
 
                                     <p class="mt-2 text-center text-sm text-gray-600 max-w">
-                                        Or
+                                        o
                                         {{ ' ' }}
-                                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
-                                            start your 14-day free trial
+                                        <a href="/Signup" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                            Registrati
                                         </a>
                                     </p>
                                 </div>
@@ -47,7 +47,7 @@
                                         <form class="space-y-6">
                                             <div>
                                                 <label for="email" class="block text-sm font-medium text-gray-700">
-                                                    Email address
+                                                    Email
                                                 </label>
                                                 <div class="mt-1">
                                                     <input id="email" name="email" type="email" autocomplete="email" v-model="email" :rules="emailRules" required="" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
@@ -146,7 +146,7 @@
 
 
             <main>
-                <div class="mx-auto  bg-gradient-to-b from-gray-800 to-blueGray-700">
+                <div class="mx-auto bg-gradient-to-b from-gray-800 to-blueGray-700">
 
                     <router-view/>
 
@@ -163,7 +163,7 @@
                     </div>
                 </nav>
                 <div class="mt-8 flex justify-center space-x-6">
-                    <a v-for="item in social" :key="item.name" :href="item.href" class="text-green-500 hover:text-green-900">
+                    <a v-for="item in social" :key="item.name" :href="item.href" class="text-teal-500 hover:text-teal-600">
                         <span class="sr-only">{{ item.name }}</span>
                         <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
                     </a>
@@ -194,7 +194,10 @@ const user = {
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'About', href: '/About', current: false },
+    { name: 'Contact', href: '/Contact', current: false },
   { name: 'Signup', href: '/Signup', current: false },
+
+
 ]
 
 const userNavigation = [

@@ -29168,6 +29168,10 @@ var navigation = [{
   href: '/About',
   current: false
 }, {
+  name: 'Contact',
+  href: '/Contact',
+  current: false
+}, {
   name: 'Signup',
   href: '/Signup',
   current: false
@@ -29299,6 +29303,66 @@ var social = [{
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/About.vue?vue&type=script&lang=js":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/About.vue?vue&type=script&lang=js ***!
+  \******************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var stats = [{
+  label: 'Founded',
+  value: '2021'
+}, {
+  label: 'Employees',
+  value: '2'
+}, {
+  label: 'Users',
+  value: '521'
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  setup: function setup() {
+    return {
+      stats: stats
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Contact.vue?vue&type=script&lang=js":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Contact.vue?vue&type=script&lang=js ***!
+  \********************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _headlessui_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @headlessui/vue */ "./node_modules/@headlessui/vue/dist/headlessui.esm.js");
+/* harmony import */ var _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @heroicons/vue/outline */ "./node_modules/@heroicons/vue/outline/esm/index.js");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    Popover: _headlessui_vue__WEBPACK_IMPORTED_MODULE_0__.Popover,
+    PopoverButton: _headlessui_vue__WEBPACK_IMPORTED_MODULE_0__.PopoverButton,
+    PopoverPanel: _headlessui_vue__WEBPACK_IMPORTED_MODULE_0__.PopoverPanel,
+    MailIcon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_1__.MailIcon,
+    MenuIcon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_1__.MenuIcon,
+    PhoneIcon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_1__.PhoneIcon,
+    XIcon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_1__.XIcon
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Home.vue?vue&type=script&lang=js":
 /*!*****************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Home.vue?vue&type=script&lang=js ***!
@@ -29329,9 +29393,27 @@ __webpack_require__.r(__webpack_exports__);
       });
     };
 
+    var beforeSlide = function beforeSlide(el) {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(400px)';
+    };
+
+    var slide = function slide(el, done) {
+      gsap__WEBPACK_IMPORTED_MODULE_0__.default.to(el, {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        onComplete: done,
+        delay: el.dataset.index * 0.2,
+        rotation: 360
+      });
+    };
+
     return {
       beforeEnter: beforeEnter,
-      enter: enter
+      enter: enter,
+      slide: slide,
+      beforeSlide: beforeSlide
     };
   }
 });
@@ -29408,7 +29490,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "min-h-screen"
+  "class": "min-h-screen mt-0"
 };
 var _hoisted_2 = {
   "class": "mx-auto px-4 sm:px-6 lg:px-8"
@@ -29474,16 +29556,16 @@ var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 
 var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", {
   "class": "mt-6 text-center text-3xl font-extrabold text-gray-900"
-}, " Sign in to your account ", -1
+}, " Accedi al tuo account ", -1
 /* HOISTED */
 );
 
 var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   "class": "mt-2 text-center text-sm text-gray-600 max-w"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Or " + /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(' ') + " "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
-  href: "#",
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" o " + /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(' ') + " "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+  href: "/Signup",
   "class": "font-medium text-indigo-600 hover:text-indigo-500"
-}, " start your 14-day free trial ")], -1
+}, " Registrati ")], -1
 /* HOISTED */
 );
 
@@ -29500,7 +29582,7 @@ var _hoisted_18 = {
 var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
   "for": "email",
   "class": "block text-sm font-medium text-gray-700"
-}, " Email address ", -1
+}, " Email ", -1
 /* HOISTED */
 );
 
@@ -29588,7 +29670,7 @@ var _hoisted_35 = {
   "class": "mt-3 space-y-1"
 };
 var _hoisted_36 = {
-  "class": "mx-auto  bg-gradient-to-b from-gray-800 to-blueGray-700"
+  "class": "mx-auto bg-gradient-to-b from-gray-800 to-blueGray-700"
 };
 var _hoisted_37 = {
   "class": "bg-white"
@@ -29861,7 +29943,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("a", {
       key: item.name,
       href: item.href,
-      "class": "text-green-500 hover:text-green-900"
+      "class": "text-teal-500 hover:text-teal-600"
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_41, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.name), 1
     /* TEXT */
     ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)((0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveDynamicComponent)(item.icon), {
@@ -29890,19 +29972,546 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = {
-  id: "intro",
-  "class": "py-40",
-  style: {
-    "background-image": "url('/img/home/wall.jpg')",
-    "background-size": "cover"
-  }
+
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"intro\" class=\"py-40 bg-center\" style=\"background-image:url(&#39;/img/jump.jpg&#39;);background-size:cover;\"><div class=\"max-w-7xl mx-auto\"><div class=\"flex flex-wrap items-center px-6 sm:px-0\"><div class=\"w-full sm:w-1/3 order-last sm:order-first\"><h1 class=\"text-5xl font-poppins font-bold mb-4 text-white\">Creativity</h1><p class=\"mt-6 text-xl text-white max-w-3xl\">Niente al mondo è così potente quanto un’idea della quale sia giunto il tempo. <br><strong><i>– Victor Hugo </i></strong></p></div></div></div></section>", 1);
+
+var _hoisted_2 = {
+  "class": "py-16 bg-gradient-to-b from-gray-800 to-blueGray-700 overflow-hidden"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-7xl mx-auto\"><div class=\"flex flex-wrap items-center px-6 sm:px-0\"><div class=\"w-full sm:w-1/3 order-last sm:order-first\"><h1 class=\"text-5xl font-poppins font-bold mb-4 text-white\">CreateWeb</h1><h4 class=\"text-xl mb-8 text-white\">Realizzatori di sogni! Il tuo sito web è il tuo biglietto da visita, la prima cosa che le persone consultano dopo aver sentito parlare di te o della tua azienda.</h4></div><div class=\"w-full sm:w-1/2 flex justify-center\"><!--                    &lt;transition\n                                                appear\n                                                @before-enter=&quot;beforeEnter&quot;\n                                                @enter=&quot;enter&quot;\n                                            &gt;\n                                            &lt;img class=&quot;w-3/3&quot; src=&quot;/img/home/coding.jpg&quot;&gt;\n                                            &lt;/transition&gt;--></div></div></div>", 1);
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "text-base max-w-prose mx-auto lg:max-w-none"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("header", {
+  "class": "text-center mb-16"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", {
+  "class": "leading-tight text-2xl sm:text-3xl font-bold mb-3 text-white"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("What makes us "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "text-green-600"
+}, "different.")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", {
+  "class": "leading-tight text-xl text-gray-500"
+}, "La creatività è senza dubbio la risorsa umana più importante. Senza creatività non ci sarebbe progresso e ripeteremmo sempre gli stessi schemi.")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "text-lg text-white"
+}, "Un sito web è una vetrina virtuale, un vero e proprio negozio; solo che per entrarvi non ti serve uscire di casa, puoi farlo seduto sul divano che tanto ami, in pigiama, anche con i capelli arruffati, tanto nessuno ti noterà. Ma tu noterai tante cose: colori, immagini, descrizioni, informazioni interattive, video e tanti contenuti creativi.")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative z-10"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "prose prose-indigo text-white mx-auto lg:max-w-none"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Un sito web è quindi uno strumento molto importante per farsi conoscere, uno strumento diverso dai Social Network, anche se spesso queste piattaforme cooperano assieme per lo stesso scopo. I siti web sono quindi la tua cartolina di presentazione, sono il tuo biglietto da visita. La creatività è un elemento fondamentale per un sito web. Prendete il caso delle vetrine dei negozi, a primavera per esempio, ci sono fiori di ciliegio che decorano i manichini, decorazioni floreali e colorate che esplodono attorno ai prodotti in vendita. Ebbene, un sito web deve essere originale e creativo per poter attrarre i nostri occhi e metterci a nostro agio. Tendenzialmente, tutto ciò che è scontato o noioso lo osserviamo e non ci trasmette alcuna emozione, quindi lo scartiamo. Di siti web poi ce ne sono tanti, soprattutto ci sono tanti siti diversi per lo stesso prodotto. Per cui, un sito web originale è ciò che aiuta a valorizzare il tuo prodotto rispetto alla concorrenza. Cosa serve per creare un sito web originale e creativo? Per ottenere una torta golosa e succulenta ci vogliono un insieme di ingredienti selezionati apposta per quella ricetta. Ma prenderesti mai tutti questi ingredienti, mescolandoli come capita e versandoli nella tortiera? Beh, credo ne verrebbe fuori un bel pasticcio! Allo stesso modo, forse produci un prodotto o offri un servizio davvero di ottima qualità, ma se realizzi un sito internet dove semplicemente inserisci dei dati, un po’ di testo e qualche foto sparsa qua e là, difficilmente otterrai dei risultati positivi. ")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20",
+  width: "404",
+  height: "384",
+  fill: "none",
+  viewBox: "0 0 404 384",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("defs", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("pattern", {
+  id: "bedc54bc-7371-44a2-a2bc-dc68d819ae60",
+  x: "0",
+  y: "0",
+  width: "20",
+  height: "20",
+  patternUnits: "userSpaceOnUse"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  x: "0",
+  y: "0",
+  width: "4",
+  height: "4",
+  "class": "text-green-500",
+  fill: "currentColor"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  width: "404",
+  height: "384",
+  fill: "url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("blockquote", {
+  "class": "relative bg-gray-300 rounded-lg shadow-lg"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8 mt-10 "
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative text-lg text-gray-700 font-medium mt-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200",
+  fill: "currentColor",
+  viewBox: "0 0 32 32",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "relative"
+}, "Nella mia vita, per piacere o necessità, ho sempre dovuto imparare ad adattarmi, a cambiare lavoro e abitudini. Appassionato di tecnologia, ho voluto fare della realizzazione di siti internet più che una passione. Mi ha aiutato la volontà di comprendere meglio e abbattare alcune frontiere per poter immaginare un nuovo inizio.")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("cite", {
+  "class": "relative flex items-center sm:items-start bg-green-500 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-indigo-300",
+  src: "/img/gian.jpg",
+  alt: ""
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "relative ml-4 text-indigo-500 font-semibold leading-6 sm:ml-24 sm:pl-1"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "text-white font-semibold sm:inline"
+}, "Gianluca Tiengo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(' ') + " "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "sm:inline"
+}, "CEO at CreateWeb")])])])])])], -1
+/* HOISTED */
+);
 
-function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("section", _hoisted_1, [_hoisted_2]);
+var _hoisted_4 = {
+  "class": "lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start mt-24"
+};
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative sm:py-16 lg:py-0"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "aria-hidden": "true",
+  "class": "hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "absolute inset-y-0 right-1/2 w-full bg-gray-300 rounded-r-3xl lg:right-72"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12",
+  width: "404",
+  height: "392",
+  fill: "none",
+  viewBox: "0 0 404 392"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("defs", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("pattern", {
+  id: "02f20b47-fd69-4224-a62a-4c9de5c763f7",
+  x: "0",
+  y: "0",
+  width: "20",
+  height: "20",
+  patternUnits: "userSpaceOnUse"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  x: "0",
+  y: "0",
+  width: "4",
+  height: "4",
+  "class": "text-gray-800",
+  fill: "currentColor"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  width: "404",
+  height: "392",
+  fill: "url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Testimonial card"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "absolute inset-0 h-full w-full object-cover",
+  src: "/img/renzo.jpeg",
+  alt: ""
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "absolute inset-0"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "absolute inset-0 bg-gradient-to-t to-transparent from-gray-500 opacity-60"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative px-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("blockquote", {
+  "class": "mt-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative text-lg font-medium text-white md:flex-grow"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-700",
+  fill: "currentColor",
+  viewBox: "0 0 32 32",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "relative"
+}, " Per un architetto la libertà non è un grande regalo. Io ringrazio il cielo quando mi danno indicazioni precise: sono come i quadretti sul grande foglio bianco che è il progetto. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("footer", {
+  "class": "mt-4"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "text-base font-semibold text-gray-700"
+}, "Renzo Piano, Architetto")])])])])])], -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
+  "class": "relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "pt-12 sm:pt-16 lg:pt-20"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", {
+  "class": "text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl"
+}, " This is how we do it "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-6 text-white space-y-6"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " A seconda del tipo di progetto, le fasi fondamentali di realizzazione di un sito web possono variare. Non tutti i siti web sono uguali: per realizzare un sito aziendale, un catalogo online o un e-commerce sono necessarie tipologie di gestione e pianificazione diverse. Di conseguenza anche le fasi di realizzazione possono aumentare o essere suddivise a loro volta in sotto-fasi. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Di solito la prima cosa che si crea è la struttura del sito, il template di base delle varie pagine e gli elementi fondamentali: la struttura di navigazione, il footer, il socket, ecc. Questa struttura funge da modello per gran parte delle pagine di contenuto del vostro sito. Sarà compito del designer infatti prendere il contenuto e distribuirlo nelle aree appropriate. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Contestualmente a questa fase è quindi necessario lavorare sui contenuti da inserire all’interno del sito. La mappa del sito che abbiamo definito nella fase di progettazione rappresenta la traccia che dovremo seguire per la preparazione dei testi e delle immagini. ")])], -1
+/* HOISTED */
+);
+
+var _hoisted_8 = {
+  "class": "mt-10"
+};
+var _hoisted_9 = {
+  "class": "grid grid-cols-2 gap-x-4 gap-y-8"
+};
+var _hoisted_10 = {
+  "class": "text-base font-medium text-gray-500"
+};
+var _hoisted_11 = {
+  "class": "text-3xl font-extrabold tracking-tight text-gray-900"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Content area "), _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Stats section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("dl", _hoisted_9, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.stats, function (stat) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+      key: stat.label,
+      "class": "border-t-2 border-gray-100 pt-6"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("dt", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(stat.label), 1
+    /* TEXT */
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("dd", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(stat.value), 1
+    /* TEXT */
+    )]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])])])])])], 64
+  /* STABLE_FRAGMENT */
+  );
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Contact.vue?vue&type=template&id=1d91a851":
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Contact.vue?vue&type=template&id=1d91a851 ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "overflow-hidden"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"intro\" class=\"py-28\" style=\"background-image:url(&#39;/img/ops.jpg&#39;);background-size:cover;\"><div class=\"bg-warm-gray-50\"><div class=\"py-24 lg:py-32\"><div class=\"relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8\"><h1 class=\"text-4xl font-extrabold tracking-tight text-green-500 sm:text-5xl lg:text-6xl\">Get in touch!</h1><p class=\"mt-6 text-xl text-white max-w-3xl\">La personalizzazione non è una questione di nome e cognome. È una questione di contenuti rilevanti. <br><strong><i>- Dan Jak </i></strong></p></div></div></div></section>", 1);
+
+var _hoisted_3 = {
+  "class": "bg-white",
+  "aria-labelledby": "contactHeading"
+};
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "absolute w-full h-1/2 bg-warm-gray-50",
+  "aria-hidden": "true"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "absolute z-0 top-0 right-0 transform -translate-y-16 translate-x-1/2 sm:translate-x-1/4 md:-translate-y-24 lg:-translate-y-72",
+  width: "404",
+  height: "384",
+  fill: "none",
+  viewBox: "0 0 404 384",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("defs", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("pattern", {
+  id: "64e643ad-2176-4f86-b3d7-f2c5da3b6a6d",
+  x: "0",
+  y: "0",
+  width: "20",
+  height: "20",
+  patternUnits: "userSpaceOnUse"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  x: "0",
+  y: "0",
+  width: "4",
+  height: "4",
+  "class": "text-green-500",
+  fill: "currentColor"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  width: "404",
+  height: "384",
+  fill: "url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
+})])], -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
+  "class": "contact"
+};
+var _hoisted_7 = {
+  "class": "relative bg-white shadow-xl"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", {
+  id: "contactHeading",
+  "class": "sr-only"
+}, "Contact us", -1
+/* HOISTED */
+);
+
+var _hoisted_9 = {
+  "class": "grid grid-cols-1 lg:grid-cols-3"
+};
+var _hoisted_10 = {
+  "class": "relative overflow-hidden py-10 px-6 bg-gradient-to-b from-teal-500 to-teal-600 sm:px-10 xl:p-12"
+};
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "absolute inset-0 pointer-events-none sm:hidden",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "absolute inset-0 w-full h-full",
+  width: "343",
+  height: "388",
+  viewBox: "0 0 343 388",
+  fill: "none",
+  preserveAspectRatio: "xMidYMid slice",
+  xmlns: "http://www.w3.org/2000/svg"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z",
+  fill: "url(#linear1)",
+  "fill-opacity": ".1"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("defs", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("linearGradient", {
+  id: "linear1",
+  x1: "254.553",
+  y1: "107.554",
+  x2: "961.66",
+  y2: "814.66",
+  gradientUnits: "userSpaceOnUse"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("stop", {
+  "stop-color": "#fff"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("stop", {
+  offset: "1",
+  "stop-color": "#fff",
+  "stop-opacity": "0"
+})])])])], -1
+/* HOISTED */
+);
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none sm:block lg:hidden",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "absolute inset-0 w-full h-full",
+  width: "359",
+  height: "339",
+  viewBox: "0 0 359 339",
+  fill: "none",
+  preserveAspectRatio: "xMidYMid slice",
+  xmlns: "http://www.w3.org/2000/svg"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z",
+  fill: "url(#linear2)",
+  "fill-opacity": ".1"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("defs", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("linearGradient", {
+  id: "linear2",
+  x1: "192.553",
+  y1: "28.553",
+  x2: "899.66",
+  y2: "735.66",
+  gradientUnits: "userSpaceOnUse"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("stop", {
+  "stop-color": "#fff"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("stop", {
+  offset: "1",
+  "stop-color": "#fff",
+  "stop-opacity": "0"
+})])])])], -1
+/* HOISTED */
+);
+
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none lg:block",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "absolute inset-0 w-full h-full",
+  width: "160",
+  height: "678",
+  viewBox: "0 0 160 678",
+  fill: "none",
+  preserveAspectRatio: "xMidYMid slice",
+  xmlns: "http://www.w3.org/2000/svg"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z",
+  fill: "url(#linear3)",
+  "fill-opacity": ".1"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("defs", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("linearGradient", {
+  id: "linear3",
+  x1: "192.553",
+  y1: "325.553",
+  x2: "899.66",
+  y2: "1032.66",
+  gradientUnits: "userSpaceOnUse"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("stop", {
+  "stop-color": "#fff"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("stop", {
+  offset: "1",
+  "stop-color": "#fff",
+  "stop-opacity": "0"
+})])])])], -1
+/* HOISTED */
+);
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
+  "class": "text-lg font-medium text-white"
+}, "Contact information", -1
+/* HOISTED */
+);
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "mt-6 text-base text-teal-50 max-w-3xl"
+}, "Siamo sempre entusiasti quando si tratta di iniziare nuove collaborazioni. Non esitare a contattarci.", -1
+/* HOISTED */
+);
+
+var _hoisted_16 = {
+  "class": "mt-8 space-y-6"
+};
+
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("dt", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "sr-only"
+}, "Phone number")], -1
+/* HOISTED */
+);
+
+var _hoisted_18 = {
+  "class": "flex text-base text-teal-50"
+};
+
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "ml-3"
+}, "+39 349 425 7041", -1
+/* HOISTED */
+);
+
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("dt", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "sr-only"
+}, "Email")], -1
+/* HOISTED */
+);
+
+var _hoisted_21 = {
+  "class": "flex text-base text-teal-50"
+};
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "ml-3"
+}, "info@createweb.info", -1
+/* HOISTED */
+);
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
+  "class": "text-lg font-medium text-warm-gray-900"
+}, "Send us a message"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", {
+  action: "#",
+  method: "POST",
+  "class": "mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "first_name",
+  "class": "block text-sm font-medium text-warm-gray-900"
+}, "First name"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-1"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  type: "text",
+  name: "first_name",
+  id: "first_name",
+  autocomplete: "given-name",
+  "class": "py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "last_name",
+  "class": "block text-sm font-medium text-warm-gray-900"
+}, "Last name"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-1"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  type: "text",
+  name: "last_name",
+  id: "last_name",
+  autocomplete: "family-name",
+  "class": "py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "email",
+  "class": "block text-sm font-medium text-warm-gray-900"
+}, "Email"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-1"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  id: "email",
+  name: "email",
+  type: "email",
+  autocomplete: "email",
+  "class": "py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "flex justify-between"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "phone",
+  "class": "block text-sm font-medium text-warm-gray-900"
+}, "Phone"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  id: "phone-optional",
+  "class": "text-sm text-warm-gray-500"
+}, "Optional")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-1"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  type: "text",
+  name: "phone",
+  id: "phone",
+  autocomplete: "tel",
+  "class": "py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md",
+  "aria-describedby": "phone-optional"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sm:col-span-2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "subject",
+  "class": "block text-sm font-medium text-warm-gray-900"
+}, "Subject"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-1"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  type: "text",
+  name: "subject",
+  id: "subject",
+  "class": "py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sm:col-span-2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "flex justify-between"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "message",
+  "class": "block text-sm font-medium text-warm-gray-900"
+}, "Message"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  id: "message-max",
+  "class": "text-sm text-warm-gray-500"
+}, "Max. 500 characters")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-1"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("textarea", {
+  id: "message",
+  name: "message",
+  rows: "4",
+  "class": "py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border border-warm-gray-300 rounded-md",
+  "aria-describedby": "message-max"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sm:col-span-2 sm:flex sm:justify-end"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  type: "submit",
+  "class": "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-full text-white bg-green-500 hover:bg-green-600  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+}, " Submit ")])])], -1
+/* HOISTED */
+);
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_PhoneIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PhoneIcon");
+
+  var _component_MailIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("MailIcon");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("main", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Header "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Contact section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Decorative dot pattern "), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Contact information "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Decorative angle backgrounds "), _hoisted_11, _hoisted_12, _hoisted_13, _hoisted_14, _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("dl", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("dd", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PhoneIcon, {
+    "class": "flex-shrink-0 w-6 h-6 text-teal-200",
+    "aria-hidden": "true"
+  }), _hoisted_19]), _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("dd", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_MailIcon, {
+    "class": "flex-shrink-0 w-6 h-6 text-teal-200",
+    "aria-hidden": "true"
+  }), _hoisted_22])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Contact form "), _hoisted_23])])])])]);
 }
 
 /***/ }),
@@ -29920,77 +30529,339 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"intro\" class=\"py-40\" style=\"background-image:url(&#39;/img/home/wall.jpg&#39;);background-size:cover;\"><div class=\"max-w-7xl mx-auto\"><div class=\"flex flex-wrap items-center px-6 sm:px-0\"><div class=\"w-full sm:w-1/3 order-last sm:order-first\"><h1 class=\"text-5xl font-poppins font-bold mb-4 text-white\">CreateWeb</h1><h4 class=\"text-xl mb-8 text-white\">Realizzatori di sogni! Il tuo sito web è il tuo biglietto da visita, la prima cosa che le persone consultano dopo aver sentito parlare di te o della tua azienda.</h4></div></div></div></section>", 1);
-
+var _hoisted_1 = {
+  "class": "mx-auto bg-gradient-to-b from-gray-800 to-blueGray-700"
+};
 var _hoisted_2 = {
-  id: "how-to",
-  "class": "py-16 "
+  id: "intro",
+  "class": "py-40 bg-center",
+  style: {
+    "background-image": "url('/img/home/round.jpg')",
+    "background-size": "cover"
+  }
 };
 var _hoisted_3 = {
-  "class": "max-w-10xl mx-auto px-6 sm:px-0"
+  "class": "max-w-7xl mx-auto"
+};
+var _hoisted_4 = {
+  "class": "flex flex-wrap items-center px-6 sm:px-0"
+};
+var _hoisted_5 = {
+  "class": "w-full sm:w-1/3 order-last sm:order-first"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("header", {
-  "class": "text-center mb-16"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  "class": "mx-auto h-36 w-auto",
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": " h-36 w-auto mb-3",
+  id: "logo",
   src: "/img/create.png",
   alt: "Workflow"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", {
-  "class": "leading-tight text-3xl sm:text-4xl font-bold mb-3 text-green-500"
-}, "CreateWeb"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", {
-  "class": "leading-tight text-xl text-white mb-4"
-}, "Sviluppo di prodotti digitali per startup e aziende innovative.")], -1
-/* HOISTED */
-);
-
-var _hoisted_5 = {
-  "class": "flex flex-wrap items-center justify-between"
-};
-
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "w-full sm:w-1/2 order-last sm:order-first"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
-  "class": "text-4xl font-poppins font-bold mb-4 mx-10 mt-4"
-}, "LA NOSTRA MISSIONE"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
-  "class": "text-white text-xl mx-10"
-}, "Come appassionati di tecnologia, utilizziamo quotidianamente molti prodotti che amiamo. E mentre il confine tra un prodotto buono e uno cattivo è piuttosto sottile, la nostra esperienza ci ha mostrato che il lancio di un prodotto che gli utenti adoreranno richiede molto impegno e disciplina. La nostra missione è aiutarti a creare questo prodotto per un lancio di successo.")], -1
-/* HOISTED */
-);
-
-var _hoisted_7 = {
-  "class": "w-full sm:w-1/2 flex justify-center"
-};
-
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  "class": "w-4/5",
-  src: "/img/home/keepcalm.jpg"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex flex-wrap items-center justify-between mt-20\"><div class=\"w-full sm:w-1/2 order-last\"><h1 class=\"text-3xl font-poppins font-bold mb-4 mx-10 mt-4\">INIZIA SENZA ATTESA</h1><p class=\"text-white text-xl mx-10\">Mettere insieme un team di sviluppatori è lungo, costoso e difficile. Questo non è fatto alla leggera. Il nostro team è funzionale, esperto e pronto a iniziare rapidamente. Lanciare un buon prodotto significa anche cogliere l&#39;opportunità di mercato al momento giusto. Lancia il tuo prodotto al momento giusto e prenditi il tempo necessario per costruire la tua squadra.</p></div><div class=\"w-full sm:w-1/2 flex justify-center\"><img class=\"w-4/5\" src=\"/img/home/code.jpg\"></div></div><div class=\"flex flex-wrap items-center justify-between mt-20\"><div class=\"w-full sm:w-1/2 order-last sm:order-first\"><h1 class=\"text-3xl font-poppins font-bold mb-4 mx-10 mt-4\">LA NOSTRA SQUADRA</h1><p class=\"text-white text-xl mx-10\">Il nostro team è composto da sviluppatori professionisti ed esperti. Negli anni abbiamo costruito una rete di partner che ci ha permesso di intraprendere progetti importanti. Grazie alla nostra passione per lo sviluppo, siamo in grado di realizzare tutti i tipi di progetti e affrontare nuove sfide.</p></div><div class=\"w-full sm:w-1/2 flex justify-center\"><img class=\"w-4/5\" src=\"/img/home/notes.jpg\"></div></div>", 2);
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
+  "class": "text-5xl font-poppins font-bold mb-4 text-white"
+}, "CreateWeb", -1
+/* HOISTED */
+);
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"testimonials\" class=\"py-28 border-t\"><div class=\"max-w-10xl mx-auto px-6 sm:px-0\"><header class=\"text-center mb-16\"><h2 class=\"leading-tight text-2xl sm:text-3xl font-bold mb-3\">Ti aiutiamo in ogni fase del percorso seguendo <a href=\"https://agilemanifesto.org/iso/it/principles.html\" class=\"text-green-600\">i principi sottostanti al Manifesto Agile.</a></h2><h4 class=\"leading-tight text-xl text-gray-500\">La nostra massima priorità è soddisfare il cliente rilasciando software di valore, fin da subito e in maniera continua.</h4></header><div class=\"flex flex-wrap items-center justify-between\"><!--Begin testimonial--><div class=\"w-full sm:w-1/2 md:w-1/3 p-2\"><div class=\"rounded\"><img src=\"/img/home/eyes.jpg\" class=\"rounded-t\"><div class=\"p-6 border rounded-b text-center\"><p class=\"font-bold text-lg mb-1\">Roadmap del prodotto</p><p class=\"text-gray-600 italic mb-4\">Per definire la visione di un prodotto o servizio, ci prendiamo il tempo per ascoltarti e comprendere le tue esigenze e quelle dei tuoi clienti. Scriviamo un documento con le specifiche tecniche, alcuni mockup, un programma e una stima del budget.</p><p class=\"font-bold text-gray-600 text-sm\">Photographer / Film maker</p></div></div></div><!--End testimonial--><!--Begin testimonial--><div class=\"w-full sm:w-1/2 md:w-1/3 p-2\"><div class=\"rounded\"><img src=\"/img/home/elvis.jpg\" class=\"rounded-t\"><div class=\"p-6 border rounded-b text-center\"><p class=\"font-bold text-lg mb-1\">Prototipazione</p><p class=\"text-gray-600 italic mb-4\">Prima di investire più tempo e denaro in un progetto, a volte è utile convalidare le ipotesi o chiudere le porte per rifocalizzare meglio. Crea una demo interattiva, convalida l&#39;interesse dei tuoi utenti o testa una tecnologia.</p><p class=\"font-bold text-gray-600 text-sm\">Freelance Photographer</p></div></div></div><!--End testimonial--><!--Begin testimonial--><div class=\"w-full sm:w-1/2 md:w-1/3 p-2\"><div class=\"rounded\"><img src=\"/img/home/thisistheplace.jpg\" class=\"rounded-t\"><div class=\"p-6 border rounded-b text-center\"><p class=\"font-bold text-lg mb-1\">Sviluppo completo</p><p class=\"text-gray-600 italic mb-4\">Hai la visione, senti la trazione e tutto ciò di cui hai bisogno è il software? Il nostro team lavorerà con te per sviluppare questo nuovo prodotto funzionale e di design che i tuoi clienti adoreranno usare. E ti aiuteremo a iniziare.</p><p class=\"font-bold text-gray-600 text-sm\">Freelance Film maker</p></div></div></div><!--End testimonial--></div></div></section>", 1);
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", {
+  "class": "text-xl mb-8 text-white"
+}, "Realizzatori di sogni! Il tuo sito web è il tuo biglietto da visita, la prima cosa che le persone consultano dopo aver sentito parlare di te o della tua azienda.", -1
+/* HOISTED */
+);
+
+var _hoisted_9 = {
+  "class": "overflow-hidden"
+};
+var _hoisted_10 = {
+  "class": "relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8"
+};
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
+  "class": "mt-2 text-3xl leading-8 font-extrabold tracking-tight text-teal-400 sm:text-4xl"
+}, "LA NOSTRA MISSIONE")])], -1
+/* HOISTED */
+);
+
+var _hoisted_13 = {
+  "class": "mt-8 lg:grid lg:grid-cols-2 lg:gap-8"
+};
+var _hoisted_14 = {
+  "class": "relative lg:row-start-1 lg:col-start-2"
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "hidden lg:block absolute top-0 right-0 -mt-20 -mr-20",
+  width: "404",
+  height: "384",
+  fill: "none",
+  viewBox: "0 0 404 384",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("defs", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("pattern", {
+  id: "de316486-4a29-4312-bdfc-fbce2132a2c1",
+  x: "0",
+  y: "0",
+  width: "20",
+  height: "20",
+  patternUnits: "userSpaceOnUse"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  x: "0",
+  y: "0",
+  width: "4",
+  height: "4",
+  "class": "text-teal-400",
+  fill: "currentColor"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  width: "404",
+  height: "384",
+  fill: "url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_16 = {
+  "class": "relative text-base mx-auto max-w-prose lg:max-w-none"
+};
+var _hoisted_17 = {
+  "class": "aspect-w-12 aspect-h-7 lg:aspect-none"
+};
+
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "rounded-lg shadow-lg object-cover object-center",
+  src: "/img/home/keepcalm.jpg",
+  alt: "Whitney leaning against a railing on a downtown street",
+  width: "1184",
+  height: "1376"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-8 lg:mt-0"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "text-base max-w-prose mx-auto lg:max-w-none"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "text-lg text-white"
+}, "Come appassionati di tecnologia, utilizziamo quotidianamente molti prodotti che amiamo. E mentre il confine tra un prodotto buono e uno cattivo è piuttosto sottile, la nostra esperienza ci ha mostrato che il lancio di un prodotto che gli utenti adoreranno richiede molto impegno e disciplina. La nostra missione è aiutarti a creare questo prodotto per un lancio di successo.")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-5 prose prose-indigo text-white mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.")])], -1
+/* HOISTED */
+);
+
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start mt-10"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative sm:py-16 lg:py-0"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "aria-hidden": "true",
+  "class": "hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "absolute inset-y-0 right-1/2 w-full bg-yellow-600 rounded-r-3xl lg:right-72"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12",
+  width: "404",
+  height: "392",
+  fill: "none",
+  viewBox: "0 0 404 392"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("defs", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("pattern", {
+  id: "02f20b47-fd69-4224-a62a-4c9de5c763f7",
+  x: "0",
+  y: "0",
+  width: "20",
+  height: "20",
+  patternUnits: "userSpaceOnUse"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  x: "0",
+  y: "0",
+  width: "4",
+  height: "4",
+  "class": "text-yellow-600",
+  fill: "currentColor"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  width: "404",
+  height: "392",
+  fill: "url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Testimonial card"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "absolute inset-0 h-full w-full object-cover",
+  src: "/img/home/code.jpg",
+  alt: ""
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "absolute inset-0"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "absolute inset-0 bg-gradient-to-t to-transparent from-indigo-600 opacity-90"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative px-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("blockquote", {
+  "class": "mt-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative text-lg font-medium text-white md:flex-grow"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-yellow-700",
+  fill: "currentColor",
+  viewBox: "0 0 32 32",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  d: "M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "relative"
+}, " Per un architetto la libertà non è un grande regalo. Io ringrazio il cielo quando mi danno indicazioni precise: sono come i quadretti sul grande foglio bianco che è il progetto. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("footer", {
+  "class": "mt-4"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "text-base font-semibold text-indigo-200"
+}, "Renzo Piano, Architetto")])])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Content area "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "pt-12 sm:pt-16 lg:pt-20"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", {
+  "class": "text-3xl text-yellow-600 font-extrabold tracking-tight sm:text-4xl"
+}, " INIZIA SENZA ATTESA "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-6 text-white space-y-6"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Mettere insieme un team di sviluppatori è lungo, costoso e difficile. Questo non è fatto alla leggera. Il nostro team è funzionale, esperto e pronto a iniziare rapidamente. Lanciare un buon prodotto significa anche cogliere l'opportunità di mercato al momento giusto. Lancia il tuo prodotto al momento giusto e prenditi il tempo necessario per costruire la tua squadra. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Di solito la prima cosa che si crea è la struttura del sito, il template di base delle varie pagine e gli elementi fondamentali: la struttura di navigazione, il footer, il socket, ecc. Questa struttura funge da modello per gran parte delle pagine di contenuto del vostro sito. Sarà compito del designer infatti prendere il contenuto e distribuirlo nelle aree appropriate. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Contestualmente a questa fase è quindi necessario lavorare sui contenuti da inserire all’interno del sito. La mappa del sito che abbiamo definito nella fase di progettazione rappresenta la traccia che dovremo seguire per la preparazione dei testi e delle immagini. ")])])])], -1
+/* HOISTED */
+);
+
+var _hoisted_21 = {
+  "class": "overflow-hidden mt-10"
+};
+var _hoisted_22 = {
+  "class": "relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8"
+};
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "hidden lg:block absolute top-0 bottom-0 left-3/4 w-screen"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
+  "class": "mt-2 text-3xl leading-8 font-extrabold tracking-tight text-teal-500 sm:text-4xl"
+}, "LA NOSTRA SQUADRA")])], -1
+/* HOISTED */
+);
+
+var _hoisted_25 = {
+  "class": "mt-8 lg:grid lg:grid-cols-2 lg:gap-8"
+};
+var _hoisted_26 = {
+  "class": "relative lg:row-start-1 lg:col-start-2"
+};
+
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  "class": "hidden lg:block absolute top-0 right-0 -mt-20 -mr-20",
+  width: "404",
+  height: "384",
+  fill: "none",
+  viewBox: "0 0 404 384",
+  "aria-hidden": "true"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("defs", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("pattern", {
+  id: "de316486-4a29-4312-bdfc-fbce2132a2c1",
+  x: "0",
+  y: "0",
+  width: "20",
+  height: "20",
+  patternUnits: "userSpaceOnUse"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  x: "0",
+  y: "0",
+  width: "4",
+  height: "4",
+  "class": "text-green-500",
+  fill: "currentColor"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("rect", {
+  width: "404",
+  height: "384",
+  fill: "url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_28 = {
+  "class": "relative text-base mx-auto max-w-prose lg:max-w-none"
+};
+var _hoisted_29 = {
+  "class": "aspect-w-12 aspect-h-7 lg:aspect-none"
+};
+
+var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  "class": "rounded-lg shadow-lg object-cover object-center",
+  src: "/img/home/notes.jpg",
+  alt: "Whitney leaning against a railing on a downtown street",
+  width: "1184",
+  height: "1376"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-8 lg:mt-0"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "text-base max-w-prose mx-auto lg:max-w-none"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "text-lg text-white"
+}, "Il nostro team è composto da sviluppatori professionisti ed esperti. Negli anni abbiamo costruito una rete di partner che ci ha permesso di intraprendere progetti importanti. Grazie alla nostra passione per lo sviluppo, siamo in grado di realizzare tutti i tipi di progetti e affrontare nuove sfide.")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "mt-5 prose prose-indigo text-white mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.")])], -1
+/* HOISTED */
+);
+
+var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"testimonials\" class=\"py-28 border-t\"><div class=\"max-w-10xl mx-auto px-6 sm:px-0\"><header class=\"text-center mb-16\"><h2 class=\"leading-tight text-2xl sm:text-3xl font-bold mb-3\">Ti aiutiamo in ogni fase del percorso seguendo <a href=\"https://agilemanifesto.org/iso/it/principles.html\" class=\"text-teal-600\">i principi sottostanti al Manifesto Agile.</a></h2><h4 class=\"leading-tight text-xl text-gray-500\">La nostra massima priorità è soddisfare il cliente rilasciando software di valore, fin da subito e in maniera continua.</h4></header><div class=\"flex flex-wrap items-center justify-between\"><!--Begin testimonial--><div class=\"w-full sm:w-1/2 md:w-1/3 p-2\"><div class=\"rounded\"><img src=\"/img/home/eyes.jpg\" class=\"rounded-t\"><div class=\"p-6 border rounded-b text-center\"><p class=\"font-bold text-lg mb-1\">Roadmap del prodotto</p><p class=\"text-gray-600 italic mb-4\">Per definire la visione di un prodotto o servizio, ci prendiamo il tempo per ascoltarti e comprendere le tue esigenze e quelle dei tuoi clienti. Scriviamo un documento con le specifiche tecniche, alcuni mockup, un programma e una stima del budget.</p></div></div></div><!--End testimonial--><!--Begin testimonial--><div class=\"w-full sm:w-1/2 md:w-1/3 p-2\"><div class=\"rounded\"><img src=\"/img/home/elvis.jpg\" class=\"rounded-t\"><div class=\"p-6 border rounded-b text-center\"><p class=\"font-bold text-lg mb-1\">Prototipazione</p><p class=\"text-gray-600 italic mb-4\">Prima di investire più tempo e denaro in un progetto, a volte è utile convalidare le ipotesi o chiudere le porte per rifocalizzare meglio. Crea una demo interattiva, convalida l&#39;interesse dei tuoi utenti o testa una tecnologia.</p></div></div></div><!--End testimonial--><!--Begin testimonial--><div class=\"w-full sm:w-1/2 md:w-1/3 p-2\"><div class=\"rounded\"><img src=\"/img/home/thisistheplace.jpg\" class=\"rounded-t\"><div class=\"p-6 border rounded-b text-center\"><p class=\"font-bold text-lg mb-1\">Sviluppo completo</p><p class=\"text-gray-600 italic mb-4\">Hai la visione, senti la trazione e tutto ciò di cui hai bisogno è il software? Il nostro team lavorerà con te per sviluppare questo nuovo prodotto funzionale e di design che i tuoi clienti adoreranno usare. E ti aiuteremo a iniziare.</p></div></div></div><!--End testimonial--></div></div></section>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
     appear: "",
-    onBeforeEnter: $setup.beforeEnter,
-    onEnter: $setup.enter
+    onBeforeEnter: $setup.beforeSlide,
+    onEnter: $setup.slide
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_8];
+      return [_hoisted_6];
     }),
     _: 1
     /* STABLE */
 
   }, 8
   /* PROPS */
-  , ["onBeforeEnter", "onEnter"])])]), _hoisted_9])]), _hoisted_11], 64
-  /* STABLE_FRAGMENT */
-  );
+  , ["onBeforeEnter", "onEnter"]), _hoisted_7, _hoisted_8])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("section", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [_hoisted_11, _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("figure", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+    appear: "",
+    onBeforeEnter: $setup.beforeEnter,
+    onEnter: $setup.enter
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_18];
+    }),
+    _: 1
+    /* STABLE */
+
+  }, 8
+  /* PROPS */
+  , ["onBeforeEnter", "onEnter"])])])])]), _hoisted_19])])]), _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_22, [_hoisted_23, _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("figure", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+    appear: "",
+    onBeforeEnter: $setup.beforeEnter,
+    onEnter: $setup.enter
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_30];
+    }),
+    _: 1
+    /* STABLE */
+
+  }, 8
+  /* PROPS */
+  , ["onBeforeEnter", "onEnter"])])])])]), _hoisted_31])])])]), _hoisted_32]);
 }
 
 /***/ }),
@@ -30008,94 +30879,91 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = {
+
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"intro\" class=\"py-20\" style=\"background-image:url(&#39;/img/astronaut.jpg&#39;);background-size:cover;\"><div class=\"bg-warm-gray-50\"><div class=\"py-24 lg:py-32\"><div class=\"relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8\"><h1 class=\"text-4xl font-extrabold tracking-tight text-yellow-600 sm:text-5xl lg:text-6xl\">Subscribe!</h1></div></div></div></section>", 1);
+
+var _hoisted_2 = {
+  "class": "py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12 bg-gradient-to-b from-gray-800 to-blueGray-700"
+};
+var _hoisted_3 = {
   "class": "space-y-8 divide-y divide-gray-200 pt-10 mx-10"
 };
-var _hoisted_2 = {
+var _hoisted_4 = {
   "class": "space-y-8 divide-y divide-gray-200 sm:space-y-5"
 };
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
-  "class": "text-lg leading-6 font-medium text-white"
-}, " Profile "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
-  "class": "mt-1 max-w-2xl text-sm text-white"
-}, " This information will be displayed publicly so be careful what you share. ")], -1
-/* HOISTED */
-);
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<header class=\"text-center mb-16\"><h2 class=\"leading-tight text-2xl sm:text-3xl font-bold mb-3 text-white\">Ti aiutiamo in ogni fase del percorso seguendo <a href=\"https://agilemanifesto.org/iso/it/principles.html\" class=\"text-green-600\">i principi sottostanti al Manifesto Agile.</a></h2><h4 class=\"leading-tight text-xl text-gray-500\">La nostra massima priorità è soddisfare il cliente rilasciando software di valore, fin da subito e in maniera continua.</h4></header><div><h3 class=\"text-lg leading-6 font-medium text-white\"> Profilo </h3><p class=\"mt-1 max-w-2xl text-sm text-white\"> Inserisci le tue credenziali: </p></div>", 2);
 
-var _hoisted_4 = {
+var _hoisted_7 = {
   "class": "mt-6 sm:mt-5 space-y-6 sm:space-y-5"
 };
-var _hoisted_5 = {
+var _hoisted_8 = {
   "class": "sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
 };
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
   "for": "username",
   "class": "block text-sm font-medium text-white sm:mt-px sm:pt-2"
 }, " Username ", -1
 /* HOISTED */
 );
 
-var _hoisted_7 = {
+var _hoisted_10 = {
   "class": "mt-1 sm:mt-0 sm:col-span-2"
 };
-var _hoisted_8 = {
+var _hoisted_11 = {
   "class": "max-w-lg flex rounded-md shadow-sm"
 };
-var _hoisted_9 = {
+var _hoisted_12 = {
   "class": "sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
 };
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
   "for": "username",
   "class": "block text-sm font-medium text-white sm:mt-px sm:pt-2"
 }, " Password ", -1
 /* HOISTED */
 );
 
-var _hoisted_11 = {
+var _hoisted_14 = {
   "class": "mt-1 sm:mt-0 sm:col-span-2"
 };
-var _hoisted_12 = {
+var _hoisted_15 = {
   "class": "max-w-lg flex rounded-md shadow-sm"
 };
-var _hoisted_13 = {
+var _hoisted_16 = {
   "class": "sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
 };
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
   "for": "username",
   "class": "block text-sm font-medium text-white sm:mt-px sm:pt-2"
 }, " Email ", -1
 /* HOISTED */
 );
 
-var _hoisted_15 = {
+var _hoisted_18 = {
   "class": "mt-1 sm:mt-0 sm:col-span-2"
 };
-var _hoisted_16 = {
+var _hoisted_19 = {
   "class": "max-w-lg flex rounded-md shadow-sm"
 };
-
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"pt-8 space-y-6 sm:pt-10 sm:space-y-5\"><div><h3 class=\"text-lg leading-6 font-medium text-gray-900\"> Personal Information </h3><p class=\"mt-1 max-w-2xl text-sm text-black\"> Use a permanent address where you can receive mail. </p></div><div class=\"space-y-6 sm:space-y-5\"><div class=\"sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5\"><label for=\"first_name\" class=\"block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2\"> First name </label><div class=\"mt-1 sm:mt-0 sm:col-span-2\"><input type=\"text\" name=\"first_name\" id=\"first_name\" autocomplete=\"given-name\" class=\"max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md\"></div></div><div class=\"sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5\"><label for=\"last_name\" class=\"block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2\"> Last name </label><div class=\"mt-1 sm:mt-0 sm:col-span-2\"><input type=\"text\" name=\"last_name\" id=\"last_name\" autocomplete=\"family-name\" class=\"max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md\"></div></div><div class=\"sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5\"><label for=\"email\" class=\"block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2\"> Email address </label><div class=\"mt-1 sm:mt-0 sm:col-span-2\"><input id=\"email\" name=\"email\" type=\"email\" autocomplete=\"email\" class=\"block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md\"></div></div><div class=\"sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5\"><label for=\"country\" class=\"block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2\"> Country / Region </label><div class=\"mt-1 sm:mt-0 sm:col-span-2\"><select id=\"country\" name=\"country\" autocomplete=\"country\" class=\"max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md\"><option>United States</option><option>Canada</option><option>Mexico</option></select></div></div><div class=\"sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5\"><label for=\"street_address\" class=\"block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2\"> Street address </label><div class=\"mt-1 sm:mt-0 sm:col-span-2\"><input type=\"text\" name=\"street_address\" id=\"street_address\" autocomplete=\"street-address\" class=\"block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md\"></div></div><div class=\"sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5\"><label for=\"city\" class=\"block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2\"> City </label><div class=\"mt-1 sm:mt-0 sm:col-span-2\"><input type=\"text\" name=\"city\" id=\"city\" class=\"max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md\"></div></div><div class=\"sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5\"><label for=\"state\" class=\"block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2\"> State / Province </label><div class=\"mt-1 sm:mt-0 sm:col-span-2\"><input type=\"text\" name=\"state\" id=\"state\" class=\"max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md\"></div></div><div class=\"sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5\"><label for=\"zip\" class=\"block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2\"> ZIP / Postal </label><div class=\"mt-1 sm:mt-0 sm:col-span-2\"><input type=\"text\" name=\"zip\" id=\"zip\" autocomplete=\"postal-code\" class=\"max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md\"></div></div></div></div>", 1);
-
-var _hoisted_18 = {
+var _hoisted_20 = {
   "class": "pt-5"
 };
-var _hoisted_19 = {
+var _hoisted_21 = {
   "class": "flex justify-end"
 };
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
   type: "button",
-  "class": "bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+  "class": "bg-white py-2 px-4 border border-gray-300 rounded-full shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 }, " Cancel ", -1
 /* HOISTED */
 );
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("form", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return _ctx.username = $event;
     }),
@@ -30107,7 +30975,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
   }, null, 8
   /* PROPS */
-  , ["rules"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.username]])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [_hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  , ["rules"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.username]])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
       return _ctx.password = $event;
     }),
@@ -30119,7 +30987,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
   }, null, 8
   /* PROPS */
-  , ["rules"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.password]])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [_hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  , ["rules"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.password]])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
       return _ctx.email = $event;
     }),
@@ -30131,13 +30999,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
   }, null, 8
   /* PROPS */
-  , ["rules"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.email]])])])])])]), _hoisted_17]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  , ["rules"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.email]])])])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_21, [_hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
     onClick: _cache[4] || (_cache[4] = function () {
       return $options.register && $options.register.apply($options, arguments);
     }),
     type: "submit",
-    "class": "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-  }, " Save ")])])]);
+    "class": "ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-full text-white bg-green-500 hover:bg-green-600  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+  }, " Save ")])])])])], 64
+  /* STABLE_FRAGMENT */
+  );
 }
 
 /***/ }),
@@ -30210,10 +31080,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 /* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./views/Home */ "./resources/js/views/Home.vue");
 /* harmony import */ var _views_About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/About */ "./resources/js/views/About.vue");
 /* harmony import */ var _views_Signup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/Signup */ "./resources/js/views/Signup.vue");
+/* harmony import */ var _views_Contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./views/Contact */ "./resources/js/views/Contact.vue");
+
 
 
 
@@ -30230,9 +31102,13 @@ var routes = [{
   path: "/signup",
   name: "Signup",
   component: _views_Signup__WEBPACK_IMPORTED_MODULE_2__.default
+}, {
+  path: "/contact",
+  name: "Contact",
+  component: _views_Contact__WEBPACK_IMPORTED_MODULE_3__.default
 }];
-var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_3__.createRouter)({
-  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_3__.createWebHistory)(),
+var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createRouter)({
+  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createWebHistory)(),
   routes: routes
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);
@@ -53137,15 +54013,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _About_vue_vue_type_template_id_2995bb7e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./About.vue?vue&type=template&id=2995bb7e */ "./resources/js/views/About.vue?vue&type=template&id=2995bb7e");
+/* harmony import */ var _About_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About.vue?vue&type=script&lang=js */ "./resources/js/views/About.vue?vue&type=script&lang=js");
 
-const script = {}
-script.render = _About_vue_vue_type_template_id_2995bb7e__WEBPACK_IMPORTED_MODULE_0__.render
+
+
+_About_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _About_vue_vue_type_template_id_2995bb7e__WEBPACK_IMPORTED_MODULE_0__.render
 /* hot reload */
 if (false) {}
 
-script.__file = "resources/js/views/About.vue"
+_About_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/views/About.vue"
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (script);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_About_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
+/***/ "./resources/js/views/Contact.vue":
+/*!****************************************!*\
+  !*** ./resources/js/views/Contact.vue ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Contact_vue_vue_type_template_id_1d91a851__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Contact.vue?vue&type=template&id=1d91a851 */ "./resources/js/views/Contact.vue?vue&type=template&id=1d91a851");
+/* harmony import */ var _Contact_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Contact.vue?vue&type=script&lang=js */ "./resources/js/views/Contact.vue?vue&type=script&lang=js");
+
+
+
+_Contact_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _Contact_vue_vue_type_template_id_1d91a851__WEBPACK_IMPORTED_MODULE_0__.render
+/* hot reload */
+if (false) {}
+
+_Contact_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/views/Contact.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Contact_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
 
 /***/ }),
 
@@ -53217,6 +54121,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/views/About.vue?vue&type=script&lang=js":
+/*!**************************************************************!*\
+  !*** ./resources/js/views/About.vue?vue&type=script&lang=js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_About_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_About_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./About.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/About.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/views/Contact.vue?vue&type=script&lang=js":
+/*!****************************************************************!*\
+  !*** ./resources/js/views/Contact.vue?vue&type=script&lang=js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Contact_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Contact_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Contact.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Contact.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/views/Home.vue?vue&type=script&lang=js":
 /*!*************************************************************!*\
   !*** ./resources/js/views/Home.vue?vue&type=script&lang=js ***!
@@ -53277,6 +54213,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_About_vue_vue_type_template_id_2995bb7e__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_About_vue_vue_type_template_id_2995bb7e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./About.vue?vue&type=template&id=2995bb7e */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/About.vue?vue&type=template&id=2995bb7e");
+
+
+/***/ }),
+
+/***/ "./resources/js/views/Contact.vue?vue&type=template&id=1d91a851":
+/*!**********************************************************************!*\
+  !*** ./resources/js/views/Contact.vue?vue&type=template&id=1d91a851 ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Contact_vue_vue_type_template_id_1d91a851__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Contact_vue_vue_type_template_id_1d91a851__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Contact.vue?vue&type=template&id=1d91a851 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/Contact.vue?vue&type=template&id=1d91a851");
 
 
 /***/ }),
