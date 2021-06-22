@@ -46,7 +46,7 @@
                                         @before-enter="beforeEnter"
                                         @enter="enter"
                                     >
-                                    <img class="rounded-lg shadow-lg object-cover object-center" src="/img/home/keepcalm.jpg" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376" />
+                                    <img class="rounded-2xl  shadow-lg object-cover object-center" src="/img/home/keepcalm.jpg" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376" />
                                     </transition>
                                 </div>
                             </figure>
@@ -57,8 +57,11 @@
                             <p class="text-lg text-white">Come appassionati di tecnologia, utilizziamo quotidianamente molti prodotti che amiamo. E mentre il confine tra un prodotto buono e uno cattivo è piuttosto sottile, la nostra esperienza ci ha mostrato che il lancio di un prodotto che gli utenti adoreranno richiede molto impegno e disciplina. La nostra missione è aiutarti a creare questo prodotto per un lancio di successo.</p>
                         </div>
                         <div class="mt-5 prose prose-indigo text-white mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                            <p>Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
-                            <p>Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.</p>
+                            <p>Dalla commercializzazione di Internet all’inizio anni ’90 lo sviluppo Web ha vissuto un profondo cambiamento. Se un tempo le pagine Internet erano un insieme spoglio di campi di testo,
+                                oggi in primo piano c’è una presentazione elaborata di contenuti multimediali. L’originaria piattaforma informativa è diventata oggi un mezzo d’intrattenimento. Gli utenti di Internet richiedono pagine web interattive,
+                                dotate di un design piacevole che ne permette un uso intuitivo. Al fine di
+                                soddisfare questa esigenza, includiamo contenuti dinamici con l’aiuto di diversi strumenti e realizziamo siti web personalizzati per l’utente.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -94,12 +97,12 @@
                                         <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                                     </svg>
                                     <p class="relative">
-                                        Per un architetto la libertà non è un grande regalo. Io ringrazio il cielo quando mi danno indicazioni precise: sono come i quadretti sul grande foglio bianco che è il progetto.
+                                        Misurare i progressi della programmazione dalle linee di codice è come misurare i progressi nella costruzione di aerei dal loro peso.
                                     </p>
                                 </div>
 
                                 <footer class="mt-4">
-                                    <p class="text-base font-semibold text-indigo-200">Renzo Piano, Architetto</p>
+                                    <p class="text-base font-semibold text-indigo-200">Bill Gates - business magnate, software developer e filantropo</p>
                                 </footer>
                             </blockquote>
                         </div>
@@ -156,7 +159,7 @@
                                         @before-enter="beforeEnter"
                                         @enter="enter"
                                     >
-                                        <img class="rounded-lg shadow-lg object-cover object-center" src="/img/home/notes.jpg" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376" />
+                                        <img class="rounded-2xl shadow-lg object-cover object-center" src="/img/home/notes.jpg" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376" />
                                     </transition>
                                 </div>
                             </figure>
@@ -167,8 +170,11 @@
                             <p class="text-lg text-white">Il nostro team è composto da sviluppatori professionisti ed esperti. Negli anni abbiamo costruito una rete di partner che ci ha permesso di intraprendere progetti importanti. Grazie alla nostra passione per lo sviluppo, siamo in grado di realizzare tutti i tipi di progetti e affrontare nuove sfide.</p>
                         </div>
                         <div class="mt-5 prose prose-indigo text-white mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                            <p>Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
-                            <p>Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.</p>
+                            <p>Prima di reclutare sviluppatori web, valutiamo le capacità del team di sviluppo web e come possono essere conformi alle specifiche del progetto corrente.
+                                Quando cerchi un'azienda di sviluppo web, dovresti verificare se si tratta di un'attività affidabile e di successo. La semplice creazione di un nuovo sito
+                                Web non è adeguata; è comunque necessario disporre di assistenza tecnica sufficiente per mantenerlo e lavorare in ogni momento.
+                                Un team di esperti tecnici ottimizzerà periodicamente il tuo sito in modo che i tuoi clienti abbiano un'esperienza fluida e piacevole sul tuo sito web.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -187,7 +193,7 @@
                 <!--Begin testimonial-->
                 <div class="w-full sm:w-1/2 md:w-1/3 p-2">
                     <div class="rounded">
-                        <img src="/img/home/eyes.jpg" class="rounded-t">
+                        <img src="/img/home/eyes.jpg" class="rounded-t h-60 w-full object-cover">
                         <div class="p-6 border rounded-b text-center">
                             <p class="font-bold text-lg mb-1">Roadmap del prodotto</p>
                             <p class="text-gray-600 italic mb-4">Per definire la visione di un prodotto o servizio, ci prendiamo il tempo per ascoltarti e comprendere le tue esigenze e quelle dei tuoi clienti. Scriviamo un documento con le specifiche tecniche, alcuni mockup, un programma e una stima del budget.</p>
@@ -199,10 +205,11 @@
                 <!--Begin testimonial-->
                 <div class="w-full sm:w-1/2 md:w-1/3 p-2">
                     <div class="rounded">
-                        <img src="/img/home/elvis.jpg" class="rounded-t">
+                        <img src="/img/home/elvis.jpg" class="rounded-t h-60 w-full object-cover">
                         <div class="p-6 border rounded-b text-center">
                             <p class="font-bold text-lg mb-1">Prototipazione</p>
-                            <p class="text-gray-600 italic mb-4">Prima di investire più tempo e denaro in un progetto, a volte è utile convalidare le ipotesi o chiudere le porte per rifocalizzare meglio. Crea una demo interattiva, convalida l'interesse dei tuoi utenti o testa una tecnologia.</p>
+                            <p class="text-gray-600 italic mb-4">Non c’è una formula universale e precisa, perché ogni progetto può avere caratteristiche diverse. Senza entrare in schemi o complessi diagrammi, è fondamentale ispirarsi al concetto di “iterazione”, cioè la possibilità di testare e rielaborare le nostre ipotesi fino al raggiungimento della soluzione ottimale.
+                                All’inizio dobbiamo capire le esigenze del cliente e quelle degli utenti per definire obiettivi e potenziali criticità, dopo di ché si passa all'ideazione del prodotto e quindi alla creazione di un prototipo.</p>
                         </div>
                     </div>
                 </div>
@@ -211,7 +218,7 @@
                 <!--Begin testimonial-->
                 <div class="w-full sm:w-1/2 md:w-1/3 p-2">
                     <div class="rounded">
-                        <img src="/img/home/thisistheplace.jpg" class="rounded-t">
+                        <img src="/img/home/thisistheplace.jpg" class="rounded-t h-60 w-full object-cover">
                         <div class="p-6 border rounded-b text-center">
                             <p class="font-bold text-lg mb-1">Sviluppo completo</p>
                             <p class="text-gray-600 italic mb-4">Hai la visione, senti la trazione e tutto ciò di cui hai bisogno è il software? Il nostro team lavorerà con te per sviluppare questo nuovo prodotto funzionale e di design che i tuoi clienti adoreranno usare. E ti aiuteremo a iniziare.</p>

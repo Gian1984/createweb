@@ -1,11 +1,11 @@
 <template>
     <main class="overflow-hidden">
         <!-- Header -->
-        <section id="intro" class="py-28" style="background-image: url('/img/ops.jpg'); background-size: cover;">
+        <section id="intro" class="py-6" style="background-image: url('/img/ops.jpg'); background-size: cover;">
         <div class="bg-warm-gray-50">
-            <div class="py-24 lg:py-32">
+            <div class="py-20 lg:py-32">
                 <div class="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-                    <h1 class="text-4xl font-extrabold tracking-tight text-green-500 sm:text-5xl lg:text-6xl">Get in touch!</h1>
+                    <h1 class="text-4xl font-extrabold tracking-tight text-teal-500 sm:text-5xl lg:text-6xl">Get in touch!</h1>
                     <p class="mt-6 text-xl text-white max-w-3xl">La personalizzazione non è una questione di nome e cognome. È una questione di contenuti rilevanti.
                         <br><strong><i>- Dan Jak </i></strong></p>
                 </div>
@@ -13,135 +13,114 @@
         </div>
         </section>
 
-        <!-- Contact section -->
-        <section class="bg-white" aria-labelledby="contactHeading">
-            <div class="absolute w-full h-1/2 bg-warm-gray-50" aria-hidden="true" />
-            <!-- Decorative dot pattern -->
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <svg class="absolute z-0 top-0 right-0 transform -translate-y-16 translate-x-1/2 sm:translate-x-1/4 md:-translate-y-24 lg:-translate-y-72" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
-                    <defs>
-                        <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                            <rect x="0" y="0" width="4" height="4" class="text-green-500" fill="currentColor" />
-                        </pattern>
-                    </defs>
-                    <rect width="404" height="384" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
-                </svg>
-            </div>
-            <div class="contact">
-                <div class="relative bg-white shadow-xl">
-                    <h2 id="contactHeading" class="sr-only">Contact us</h2>
+        <section>
+            <div class="bg-white bg-gradient-to-b from-gray-800 to-blueGray-700 overflow-hidden">
 
-                    <div class="grid grid-cols-1 lg:grid-cols-3">
-                        <!-- Contact information -->
-                        <div class="relative overflow-hidden py-10 px-6 bg-gradient-to-b from-teal-500 to-teal-600 sm:px-10 xl:p-12">
-                            <!-- Decorative angle backgrounds -->
-                            <div class="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
-                                <svg class="absolute inset-0 w-full h-full" width="343" height="388" viewBox="0 0 343 388" fill="none" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z" fill="url(#linear1)" fill-opacity=".1" />
-                                    <defs>
-                                        <linearGradient id="linear1" x1="254.553" y1="107.554" x2="961.66" y2="814.66" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#fff" />
-                                            <stop offset="1" stop-color="#fff" stop-opacity="0" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                <div class="relative">
+                    <div class="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+                        <div class="md:ml-auto md:pl-10">
+                            <p class="mt-2 text-white text-3xl text-center font-extrabold tracking-tight sm:text-4xl">
+                                “…giusto il tempo di un caffè…”
+                            </p>
+                            <p class="mt-3 text-lg text-gray-300 text-center">
+                                Chi l’ha detto che il tempo necessario a prenderci un caffè non sia sufficiente a vivere comunque un’esperienza importante? Quante cose possono succedere in quei pochi istanti?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" lg:block" aria-hidden="true" />
+                <div class="max-w-7xl mx-auto lg:bg-transparent lg:px-3">
+                    <div class="lg:grid lg:grid-cols-12">
+                        <div class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+                            <div class="inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true" />
+                            <div class="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0 md:block hidden sm:block ">
+                                <div class="aspect-w-10 aspect-h-6 lg:aspect-w-1 hidden md:block hidden sm:block ">
+                                    <img class="object-cover object-center rounded-3xl shadow-2xl" src="/img/meet.jpg" alt="" />
+                                </div>
                             </div>
-                            <div class="hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none sm:block lg:hidden" aria-hidden="true">
-                                <svg class="absolute inset-0 w-full h-full" width="359" height="339" viewBox="0 0 359 339" fill="none" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z" fill="url(#linear2)" fill-opacity=".1" />
-                                    <defs>
-                                        <linearGradient id="linear2" x1="192.553" y1="28.553" x2="899.66" y2="735.66" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#fff" />
-                                            <stop offset="1" stop-color="#fff" stop-opacity="0" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <div class="hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none lg:block" aria-hidden="true">
-                                <svg class="absolute inset-0 w-full h-full" width="160" height="678" viewBox="0 0 160 678" fill="none" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z" fill="url(#linear3)" fill-opacity=".1" />
-                                    <defs>
-                                        <linearGradient id="linear3" x1="192.553" y1="325.553" x2="899.66" y2="1032.66" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#fff" />
-                                            <stop offset="1" stop-color="#fff" stop-opacity="0" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <h3 class="text-lg font-medium text-white">Contact information</h3>
-                            <p class="mt-6 text-base text-teal-50 max-w-3xl">Siamo sempre entusiasti quando si tratta di iniziare nuove collaborazioni. Non esitare a contattarci.</p>
-                            <dl class="mt-8 space-y-6">
-                                <dt><span class="sr-only">Phone number</span></dt>
-                                <dd class="flex text-base text-teal-50">
-                                    <PhoneIcon class="flex-shrink-0 w-6 h-6 text-teal-200" aria-hidden="true" />
-                                    <span class="ml-3">+39 349 425 7041</span>
-                                </dd>
-                                <dt><span class="sr-only">Email</span></dt>
-                                <dd class="flex text-base text-teal-50">
-                                    <MailIcon class="flex-shrink-0 w-6 h-6 text-teal-200" aria-hidden="true" />
-                                    <span class="ml-3">info@createweb.info</span>
-                                </dd>
-                            </dl>
                         </div>
 
-                        <!-- Contact form -->
-                        <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-                            <h3 class="text-lg font-medium text-warm-gray-900">Send us a message</h3>
-                            <form action="#" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-                                <div>
-                                    <label for="first_name" class="block text-sm font-medium text-warm-gray-900">First name</label>
-                                    <div class="mt-1">
-                                        <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" />
-                                    </div>
+                        <div class="relative lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center sm:bg-gradient-to-b from-gray-800 to-blueGray-700 overflow-hidden">
+                            <div class="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block" aria-hidden="true">
+                                <svg class="absolute bottom-full left-full transform translate-y-1/3 -translate-x-2/3 xl:bottom-auto xl:top-0 xl:translate-y-0" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
+                                    <defs>
+                                        <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                            <rect x="0" y="0" width="4" height="4" class="text-indigo-500" fill="currentColor" />
+                                        </pattern>
+                                    </defs>
+                                    <rect width="404" height="384" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+                                </svg>
+                                <svg class="absolute top-full transform -translate-y-1/3 -translate-x-1/3 xl:-translate-y-1/2" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
+                                    <defs>
+                                        <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                            <rect x="0" y="0" width="4" height="4" class="text-yellow-600" fill="currentColor" />
+                                        </pattern>
+                                    </defs>
+                                    <rect width="404" height="384" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+                                </svg>
+                            </div>
+                            <div class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+                                <!-- Contact form -->
+                                <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
+                                    <h3 class="text-lg font-medium text-white">Scrivi il tuo messaggio</h3>
+                                    <h3 class="text-sm font-medium text-white">Ti risponderemo al più presto!</h3>
+                                    <form ref="form" lazy-validation class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                                        <div>
+                                            <label for="first_name" class="block text-sm font-medium text-white">Nome</label>
+                                            <div class="mt-1">
+                                                <input v-model="firstname" :rules="firstRules" type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="last_name" class="block text-sm font-medium text-white">Cognome</label>
+                                            <div class="mt-1">
+                                                <input v-model="lastname" :rules="lastRules" type="text" name="last_name" id="last_name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="email" class="block text-sm font-medium text-white">Email</label>
+                                            <div class="mt-1">
+                                                <input v-model="email" :rules="emailRules" id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="flex justify-between">
+                                                <label for="phone" class="block text-sm font-medium text-white">Telefono</label>
+                                            </div>
+                                            <div class="mt-1">
+                                                <input v-model="phone" :rules="phoneRules" type="text" name="phone" id="phone" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" aria-describedby="phone-optional" />
+                                            </div>
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <label for="subject" class="block text-sm font-medium text-white">Oggetto</label>
+                                            <div class="mt-1">
+                                                <input v-model="subject" :rules="subjectRules" type="text" name="subject" id="subject" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" />
+                                            </div>
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <div class="flex justify-between">
+                                                <label for="message" class="block text-sm font-medium text-white">Messaggio</label>
+                                                <span id="message-max" class="text-sm text-white">Max. 500 caratteri</span>
+                                            </div>
+                                            <div class="mt-1">
+                                                <textarea v-model="message" :rules="messageRules" id="message" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border border-warm-gray-300 rounded-md" aria-describedby="message-max" />
+                                            </div>
+                                        </div>
+                                        <div class="sm:col-span-2 sm:flex sm:justify-end">
+                                            <button v-on:click="register" type="submit" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-full text-white bg-green-500 hover:bg-green-600  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                Invia
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div>
-                                    <label for="last_name" class="block text-sm font-medium text-warm-gray-900">Last name</label>
-                                    <div class="mt-1">
-                                        <input type="text" name="last_name" id="last_name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label for="email" class="block text-sm font-medium text-warm-gray-900">Email</label>
-                                    <div class="mt-1">
-                                        <input id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="flex justify-between">
-                                        <label for="phone" class="block text-sm font-medium text-warm-gray-900">Phone</label>
-                                        <span id="phone-optional" class="text-sm text-warm-gray-500">Optional</span>
-                                    </div>
-                                    <div class="mt-1">
-                                        <input type="text" name="phone" id="phone" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" aria-describedby="phone-optional" />
-                                    </div>
-                                </div>
-                                <div class="sm:col-span-2">
-                                    <label for="subject" class="block text-sm font-medium text-warm-gray-900">Subject</label>
-                                    <div class="mt-1">
-                                        <input type="text" name="subject" id="subject" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md" />
-                                    </div>
-                                </div>
-                                <div class="sm:col-span-2">
-                                    <div class="flex justify-between">
-                                        <label for="message" class="block text-sm font-medium text-warm-gray-900">Message</label>
-                                        <span id="message-max" class="text-sm text-warm-gray-500">Max. 500 characters</span>
-                                    </div>
-                                    <div class="mt-1">
-                                        <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border border-warm-gray-300 rounded-md" aria-describedby="message-max" />
-                                    </div>
-                                </div>
-                                <div class="sm:col-span-2 sm:flex sm:justify-end">
-                                    <button type="submit" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-full text-white bg-green-500 hover:bg-green-600  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                        Submit
-                                    </button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 </template>
 
@@ -151,6 +130,76 @@ import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { MailIcon, MenuIcon, PhoneIcon, XIcon } from '@heroicons/vue/outline'
 
 export default {
+
+    data: () => ({
+        valid: true,
+
+        firstname: '',
+        firstRules: [
+            v => !!v || 'Name is required',
+        ],
+
+        lastname: '',
+        lastRules: [
+            v => !!v || 'Name is required',
+        ],
+
+        email: '',
+        emailRules: [
+            v => !!v || 'E-mail is required',
+            v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+        ],
+
+        phone: '',
+        phoneRules:[
+            v => !!v || 'Phone is required',
+            v => (v && v.length <= 15) || 'Phone must be less than 15 characters',
+        ],
+
+        subject:'',
+        subjectRules:[
+            v => !!v || 'Subject is required',
+            v => (v && v.length <= 20) || 'Subject must be less than 20 characters',
+        ],
+
+
+        message:'',
+        messageRules:[
+            v => !!v || 'Message is required',
+            v => (v && v.length <= 500) || 'Message must be less than 500 characters',
+        ],
+
+        errorReg:'',
+
+    }),
+
+    methods:{
+
+
+        register(){
+
+            const contact = {
+                firstname: this.firstname,
+                lastname: this.lastname,
+                email: this.email,
+                phone: this.phone,
+                subject: this.subject,
+                message: this.message,
+            }
+
+
+
+            axios.post('api/contact',contact).then(response=>{
+                console.log(contact);
+
+            }).catch((error)=>{
+                this.errorReg = error.response
+            })
+
+        },
+
+    },
+
 
     components: {
         Popover,

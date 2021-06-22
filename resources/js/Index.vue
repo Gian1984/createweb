@@ -14,83 +14,6 @@
                         </div>
                     </div>
                     <div class="hidden sm:ml-6 sm:flex sm:items-center">
-                        <button class="bg-gray-800 p-1 text-gray-400 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" type="button" @click="showModal = !showModal">
-                            <span class="sr-only">View notifications</span>
-                            <UserIcon class="h-5 w-5" aria-hidden="true"/>
-                        </button>
-
-                        <!-- Modal start -->
-
-                        <div class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex" v-if="showModal">
-                            <div class="bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8 bg-gray-400 ">
-                                <div class="sm:mx-auto sm:w-full sm:max-w-md">
-                                    <button type="button" class="rounded-md text-white hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 float-right" @click="showModal = false">
-                                        <span class="sr-only">Close</span>
-                                        <XIcon class="h-6 w-6" aria-hidden="true" />
-                                    </button>
-                                    <img class="mx-auto h-12 w-auto" src="/img/create.png" alt="Workflow" />
-                                    <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-                                        Accedi al tuo account
-                                    </h2>
-
-                                    <p class="mt-2 text-center text-sm text-gray-600 max-w">
-                                        o
-                                        {{ ' ' }}
-                                        <a href="/Signup" class="font-medium text-indigo-600 hover:text-indigo-500">
-                                            Registrati
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-                                    <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-                                        <form class="space-y-6">
-                                            <div>
-                                                <label for="email" class="block text-sm font-medium text-gray-700">
-                                                    Email
-                                                </label>
-                                                <div class="mt-1">
-                                                    <input id="email" name="email" type="email" autocomplete="email" v-model="email" :rules="emailRules" required="" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <label for="password" class="block text-sm font-medium text-gray-700">
-                                                    Password
-                                                </label>
-                                                <div class="mt-1">
-                                                    <input id="password" name="password" type="password" v-model="password" :rules="passwordRules" autocomplete="current-password" required="" class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
-                                                </div>
-                                            </div>
-
-                                            <div class="flex items-center justify-between">
-                                                <div class="flex items-center">
-                                                    <input id="remember_me" name="remember_me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" />
-                                                    <label for="remember_me" class="ml-2 block text-sm text-gray-900">
-                                                        Remember me
-                                                    </label>
-                                                </div>
-
-                                                <div class="text-sm">
-                                                    <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
-                                                        Forgot your password?
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <button type="submit" v-on:click="login" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                                    Sign in
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Modal end -->
-
                         <!-- Profile dropdown -->
                         <Menu as="div" class="ml-3 relative">
                             <div>
@@ -122,24 +45,6 @@
             <DisclosurePanel class="sm:hidden">
                 <div class="pt-2 pb-3 space-y-1">
                     <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-indigo-50 border-indigo-500 text-indigo-700' : 'border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800', 'block pl-3 pr-4 py-2 border-l-4 text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
-                </div>
-                <div class="pt-4 pb-3 border-t border-gray-200">
-                    <div class="flex items-center px-4">
-                        <div class="flex-shrink-0">
-                            <img class="h-10 w-10 rounded-full" :src="user.imageUrl" alt="" />
-                        </div>
-                        <div class="ml-3">
-                            <div class="text-base font-medium text-gray-800">{{ user.name }}</div>
-                            <div class="text-sm font-medium text-gray-500">{{ user.email }}</div>
-                        </div>
-                        <button class="ml-auto bg-white flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" v-on:click="toggleModal()">
-                            <span class="sr-only">View notifications</span>
-                            <LoginIcon class="h-6 w-6" aria-hidden="true" />
-                        </button>
-                    </div>
-                    <div class="mt-3 space-y-1">
-                        <a v-for="item in userNavigation" :key="item.name" :href="item.href" class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">{{ item.name }}</a>
-                    </div>
                 </div>
             </DisclosurePanel>
         </Disclosure>
@@ -195,15 +100,14 @@ const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'About', href: '/About', current: false },
     { name: 'Contact', href: '/Contact', current: false },
-  { name: 'Signup', href: '/Signup', current: false },
 
 
 ]
 
 const userNavigation = [
-    { name: 'Your Profile', href: '#' },
-    { name: 'Settings', href: '#' },
-    { name: 'Sign out', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/About' },
+    { name: 'Contact', href: '/Contact' },
 ]
 
 const social = [
@@ -255,41 +159,6 @@ const social = [
 
 
 export default {
-
-    name:'modal',
-
-    data() {
-        return {
-            showModal: false,
-            email: '',
-            emailRules: [
-                v => !!v || 'E-mail is required',
-                v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-            ],
-
-            password: '',
-            passwordRules: [
-                v => !!v || 'Password is required',
-                v => (v && v.length >= 6) || 'Password must be more than 6 characters',
-            ],
-        }
-    },
-
-    methods:{
-
-        login(){
-            let user = {
-                email: this.email,
-                password: this.password,
-            }
-
-            this.$refs.form.reset()
-            this.$store.dispatch('login', { user })
-                .then(() => this.$router.push({ path: "/" }))
-                .catch(err => console.log(err))
-        },
-
-    },
 
     components: {
         Disclosure,

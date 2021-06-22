@@ -17,7 +17,7 @@
                 <div class="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
                     <div class="text-base max-w-prose mx-auto lg:max-w-none">
                         <header class="text-center mb-16">
-                            <h2 class="leading-tight text-2xl sm:text-3xl font-bold mb-3 text-white">What makes us <i class="text-green-600">different.</i></h2>
+                            <p class="leading-tight text-4xl font-extrabold mb-3 text-white">Cosa ci rende <i class="text-green-600">diversi.</i></p>
                             <h4 class="leading-tight text-xl text-gray-500">La creatività è senza dubbio la risorsa umana più importante. Senza creatività non ci sarebbe progresso e ripeteremmo sempre gli stessi schemi.</h4>
                         </header>
                     </div>
@@ -53,7 +53,7 @@
                                 </defs>
                                 <rect width="404" height="384" fill="url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)" />
                             </svg>
-                            <blockquote class="relative bg-gray-300 rounded-lg shadow-lg">
+                            <blockquote class="relative bg-gray-300 rounded-2xl shadow-lg">
                                 <div class="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8 mt-10 ">
                                     <div class="relative text-lg text-gray-700 font-medium mt-8">
                                         <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
@@ -100,7 +100,7 @@
 
                                     <blockquote class="mt-8">
                                         <div class="relative text-lg font-medium text-white md:flex-grow">
-                                            <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-700" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                                            <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-900" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                                                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                                             </svg>
                                             <p class="relative">
@@ -109,7 +109,7 @@
                                         </div>
 
                                         <footer class="mt-4">
-                                            <p class="text-base font-semibold text-gray-700">Renzo Piano, Architetto</p>
+                                            <p class="text-base font-semibold text-gray-200">Renzo Piano - Architetto</p>
                                         </footer>
                                     </blockquote>
                                 </div>
@@ -121,7 +121,7 @@
                         <!-- Content area -->
                         <div class="pt-12 sm:pt-16 lg:pt-20">
                             <h2 class="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
-                                This is how we do it
+                                Lo realizziamo così
                             </h2>
                             <div class="mt-6 text-white space-y-6">
                                 <p>

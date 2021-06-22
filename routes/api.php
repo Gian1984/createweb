@@ -1,9 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,20 +18,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('auth:sanctum')->get('/authenticated', function () {
-    return true;
-});
-
-Route::middleware('auth:sanctum')->get('index', function (Request $request) {
-    Route::get('index', [UserController::class], 'index');
-    return $users = DB::table('users')->get(['name','roles','quote','author','avatar','email']);
-});
-
-
-Route::get('delete/{id}',[UserController::class,'delete']);
-Route::put('update/{id}',[UserController::class,'update']);
-
-
-Route::post('register', [UserController::class, 'register']);
-Route::post('login', [UserController::class, 'login']);
-Route::post('logout', [UserController::class, 'logout']);
+Route::post('/contact', [ContactController::class,'contact']);

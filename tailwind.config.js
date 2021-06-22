@@ -8,6 +8,7 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+
       colors: {
           teal: colors.teal,
           transparent: 'transparent',
