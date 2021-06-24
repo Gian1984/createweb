@@ -29356,11 +29356,10 @@ __webpack_require__.r(__webpack_exports__);
       };
       axios.post('api/contact', contact).then(function (response) {
         _this.success = response.data.success;
-        console.log(response.data);
 
         if (_this.success) {
           _this.$router.push({
-            name: 'Signup'
+            path: "/signup"
           });
         }
       })["catch"](function (error) {

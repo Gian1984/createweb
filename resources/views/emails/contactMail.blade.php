@@ -18,6 +18,13 @@
 
         You received an email from : {{ $details->firstname }} {{ $details->lastname }}<br><br>
 
+        Subject:{{ $details->subject }}<br><br>
+
+        Message:{{ $details->message }}<br><br>
+
+        Phone:{{ $details->phone }}<br><br>
+
+        Email:{{$details->email}}<br><br>
 
     </body>
 
