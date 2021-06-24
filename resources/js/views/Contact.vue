@@ -66,7 +66,7 @@
                                 <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                                     <h3 class="text-lg font-medium text-white">Scrivi il tuo messaggio</h3>
                                     <h3 class="text-sm font-medium text-white">Ti risponderemo al più presto!</h3>
-                                    <form ref="form" lazy-validation class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                                    <form @submit.prevent="register" ref="form" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                                         <div>
                                             <label for="first_name" class="block text-sm font-medium text-white">Nome</label>
                                             <div class="mt-1">
@@ -109,7 +109,7 @@
                                             </div>
                                         </div>
                                         <div class="sm:col-span-2 sm:flex sm:justify-end">
-                                            <button v-on:click="register" type="submit" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-full text-white bg-green-500 hover:bg-green-600  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                            <button type="submit" class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-full text-white bg-green-500 hover:bg-green-600  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                                 Invia
                                             </button>
                                         </div>
@@ -153,13 +153,11 @@ export default {
         phone: '',
         phoneRules:[
             v => !!v || 'Phone is required',
-            v => (v && v.length <= 15) || 'Phone must be less than 15 characters',
         ],
 
         subject:'',
         subjectRules:[
             v => !!v || 'Subject is required',
-            v => (v && v.length <= 20) || 'Subject must be less than 20 characters',
         ],
 
 
@@ -169,7 +167,7 @@ export default {
             v => (v && v.length <= 500) || 'Message must be less than 500 characters',
         ],
 
-        errorReg:'',
+        success:false,
 
     }),
 
@@ -190,10 +188,17 @@ export default {
 
 
             axios.post('api/contact',contact).then(response=>{
-                console.log(contact);
+                this.success = response.data.success;
+                console.log(response.data)
+                if(this.success) {
+                    this.$router.push({
+                        name: 'Signup'
+                    });
+                }
 
-            }).catch((error)=>{
-                this.errorReg = error.response
+                }).catch((error)=>{
+                console.log(error);
+                this.success = false
             })
 
         },

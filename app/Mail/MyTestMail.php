@@ -30,6 +30,12 @@ class MyTestMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+//        return $this->from('info@createweb.info')
+//            ->view('contactMail');
+
+        return $this
+            ->from('createweb@info.com')
+            ->view('emails.contactMail')
+            ->with('details', $this->details);
     }
 }
