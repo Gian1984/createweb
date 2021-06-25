@@ -42,43 +42,6 @@
 import { ExternalLinkIcon } from '@heroicons/vue/solid'
 
 export default {
-    data: () => ({
-            username: '',
-            userRules: [
-                v => !!v || 'Name is required',
-            ],
-
-            email: '',
-            emailRules: [
-                v => !!v || 'E-mail is required',
-                v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-            ],
-            password: '',
-            passwordRules: [
-                v => !!v || 'Password is required',
-                v => (v && v.length >= 6) || 'Password must be more than 6 characters',
-            ],
-    }),
-
-    methods:{
-        register(){
-
-             const project = {
-                name: this.username,
-                email: this.email,
-                password: this.password,
-
-             }
-
-             axios.post('api/register',project).then(response=>{
-                console.log(response)
-                this.$router.push({ path: "/" });
-
-            }).catch((error)=>{
-                console.log(error);
-            })
-        },
-    },
 
     components: {
         ExternalLinkIcon,

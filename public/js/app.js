@@ -36878,46 +36878,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/index.js");
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      username: '',
-      userRules: [function (v) {
-        return !!v || 'Name is required';
-      }],
-      email: '',
-      emailRules: [function (v) {
-        return !!v || 'E-mail is required';
-      }, function (v) {
-        return /.+@.+\..+/.test(v) || 'E-mail must be valid';
-      }],
-      password: '',
-      passwordRules: [function (v) {
-        return !!v || 'Password is required';
-      }, function (v) {
-        return v && v.length >= 6 || 'Password must be more than 6 characters';
-      }]
-    };
-  },
-  methods: {
-    register: function register() {
-      var _this = this;
-
-      var project = {
-        name: this.username,
-        email: this.email,
-        password: this.password
-      };
-      axios.post('api/register', project).then(function (response) {
-        console.log(response);
-
-        _this.$router.push({
-          path: "/"
-        });
-      })["catch"](function (error) {
-        console.log(error);
-      });
-    }
-  },
   components: {
     ExternalLinkIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_0__.ExternalLinkIcon
   }
