@@ -190,7 +190,7 @@ export default {
             axios.post('api/contact',contact).then(response=>{
                 this.success = response.data.success;
                 if(this.success) {
-                    this.$router.push({ path: "/signup" });
+                    this.$router.push({ path: "/messagesent" });
                 }
 
                 }).catch((error)=>{

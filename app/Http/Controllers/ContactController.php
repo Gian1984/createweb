@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Mail\ContactForm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Response;
@@ -38,7 +39,7 @@ class ContactController extends Controller
         $details = $request;
 //          Send mail
 
-        Mail::to('gl.tiengo@gmail.com')->send(new MyTestMail($details));
+        Mail::to('gl.tiengo@gmail.com')->send(new ContactForm($details));
 
         return response()->json( ['success' => true], Response::HTTP_OK);
 

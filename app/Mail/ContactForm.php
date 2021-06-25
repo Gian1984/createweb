@@ -1,5 +1,6 @@
 <?php
 
+
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
@@ -7,7 +8,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class MyTestMail extends Mailable
+class ContactForm extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -30,12 +31,10 @@ class MyTestMail extends Mailable
      */
     public function build()
     {
-//        return $this->from('info@createweb.info')
-//            ->view('contactMail');
-
         return $this
             ->from('createweb@info.com')
             ->view('emails.contactMail')
             ->with('details', $this->details);
     }
 }
+
